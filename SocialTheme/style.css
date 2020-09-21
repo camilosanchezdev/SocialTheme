@@ -1,0 +1,211 @@
+/*
+Theme Name: SocialTheme
+Theme URI: https://camilosanchez.net
+Author: Camilo Sanchez
+Author URI: https://camilosanchez.net
+Description: SocialTheme creado para WordPress.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: apk
+*/
+body{
+    background-color: white;
+}
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+nav .navbar-nav {
+    flex-direction: row;
+}
+nav .navbar-nav .nav-item{
+    padding: 10px;
+}
+.row{
+    display: flex;
+}
+.container{
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container .featured{
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container .featured .post-content .img-thumb a img{
+   /*  transition: transform 0.6s; Animation */
+    width: 100%;
+    overflow: hidden;
+    
+}
+.container .featured .post-content .img-thumb a img:hover{
+    /* transform: scale(1.6); */
+    opacity: 1.5;
+}
+.container .featured .post-content:nth-child(1){
+    height: 100%;
+    width: 65%;
+}
+.container .featured .post-content:nth-child(2){
+    height: 50%;
+    width: 35%;
+}
+.container .featured .post-content:nth-child(3){
+    height: 50%;
+    width: 35%;
+}
+.container .featured .post-content{
+    position: relative;
+
+}
+.container .featured .post-content h2{
+    position: absolute;
+    width: 80%;
+    margin-top: 40%;
+    margin-left: 5%;
+    font-weight: bold;
+    text-shadow: 1px 1px #2b2b2b;
+}
+.container .featured .post-content h2 a{
+    color: white;
+}
+.container .featured .post-content h2 a:hover{
+    text-decoration: none;
+}
+/* Navbar */
+.navbar{
+    background-color: #FF0036;
+    padding: 0;
+}
+.navbar #navbarNav{
+    max-width: 1140px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+nav .navbar-nav .nav-item{
+    padding: 5px;
+}
+/* Content Index */
+.container .row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container .row .posts{
+    display: flex;
+}
+.container .row .posts h2{
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.container .row .posts article{
+    width: 50%;
+}
+.container .row .posts article .post-content .img-thumb{
+    width: 100%;
+    margin: 0 auto;
+}
+.sidebar{
+    background-color: white;
+    height: 100vh;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.posts .post-content{
+    margin: 20px;
+    background-color: #FCFDFE;
+    
+}
+/*
+.posts .post-content .wp-post-image{
+    transition: transform 0.6s;  Animation
+    width: 100%;
+    opacity: 0.85;
+    
+}
+.posts .post-content .wp-post-image:hover{
+    transform: scale(1.6);
+    opacity: 1;
+
+}
+ */
+.posts article h2{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.posts article h2 a{
+    color: black;
+}
+.meta a{
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    
+}
+#logo a{
+    margin: 0 auto;
+}
+.list-pages{
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+.list-pages ul{
+    padding-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.list-pages ul li{
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+}
+.list-pages ul li a{
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.list-pages ul li a:hover{
+    color: #10cca9;
+    text-decoration: none;
+}
+.post-head{
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+/* single page */
+.col-9{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+article .title-sp{
+    background-color: white;
+}
+article .title-sp h1{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
