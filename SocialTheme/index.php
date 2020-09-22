@@ -17,22 +17,23 @@
 <?php if ( $the_query->have_posts() ) : ?>
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-    <div class="post-content">
+    <div class="post-content-ft">
       <h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
     
       <div class="img-thumb">
       <a href="<?php the_permalink() ?>"><img title="image title" alt="thumb image" class="wp-post-image" src="<?php echo get_the_post_thumbnail_url() ?>" style="width:100%; height:100%;"></a>
       </div>
       
-</div>
+      </div>
    
 <?php endwhile; endif; ?>
 </div> <!-- en featured -->
 <div class="row">
 
 
-<div class="col-9 posts">
-<h2>More Stories</h2>
+<div class="col-8 posts">
+    <h2 style="text-transform: uppercase">More Stories</h2>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <article>
     <div class="post-content">
@@ -74,5 +75,4 @@
 </div>
 <!-- Cierre container -->
 </div>
-
 <?php get_footer(); ?>

@@ -8,6 +8,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: apk
 */
+
 body{
     background-color: white;
 }
@@ -40,50 +41,50 @@ nav .navbar-nav .nav-item{
     flex-direction: column;
     overflow: hidden;
 }
-.container .featured .post-content .img-thumb a img{
+.container .featured .post-content-ft .img-thumb a img{
    /*  transition: transform 0.6s; Animation */
     width: 100%;
     overflow: hidden;
     
 }
-.container .featured .post-content .img-thumb a img:hover{
+.container .featured .post-content-ft .img-thumb a img:hover{
     /* transform: scale(1.6); */
     opacity: 1.5;
 }
-.container .featured .post-content:nth-child(1){
+.container .featured .post-content-ft:nth-child(1){
     height: 100%;
     width: 65%;
 }
-.container .featured .post-content:nth-child(2){
+.container .featured .post-content-ft:nth-child(2){
     height: 50%;
     width: 35%;
 }
-.container .featured .post-content:nth-child(3){
+.container .featured .post-content-ft:nth-child(3){
     height: 50%;
     width: 35%;
 }
-.container .featured .post-content{
+.container .featured .post-content-ft{
     position: relative;
-
 }
-.container .featured .post-content h2{
+.container .featured .post-content-ft h2{
     position: absolute;
-    width: 80%;
-    margin-top: 40%;
     margin-left: 5%;
     font-weight: bold;
     text-shadow: 1px 1px #2b2b2b;
+    font-size: 25px;
+    bottom: 0;
 }
-.container .featured .post-content h2 a{
+.container .featured .post-content-ft h2 a{
     color: white;
 }
-.container .featured .post-content h2 a:hover{
+.container .featured .post-content-ft h2 a:hover{
     text-decoration: none;
 }
 /* Navbar */
 .navbar{
     background-color: #FF0036;
     padding: 0;
+    margin-bottom: 50px;
 }
 .navbar #navbarNav{
     max-width: 1140px;
@@ -103,27 +104,113 @@ nav .navbar-nav .nav-item{
 }
 .container .row .posts{
     display: flex;
+    height: 100%;
 }
 .container .row .posts h2{
     text-align: center;
     width: 100%;
-    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 25px;
     font-weight: bold;
 }
+.container .row .posts a:hover{
+    color: #FF0036;
+    text-decoration: none;
+}
+
 .container .row .posts article{
     width: 50%;
+
 }
 .container .row .posts article .post-content .img-thumb{
     width: 100%;
     margin: 0 auto;
 }
+/* SIDEBAR */
 .sidebar{
     background-color: white;
-    height: 100vh;
+    margin-top: 6%;
 }
+.sidebar #popular h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.sidebar .newsletterfrom{
+    border: 10px solid #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+.sidebar .newsletterfrom .icon{
+    background-color: #FF0036;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    color: white;
+    margin-bottom: 10%;
+}
+.sidebar .newsletterfrom form{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .newsletterfrom h4{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.sidebar .newsletterfrom input:nth-child(2){
+    background-color: #FF0036;
+    color: white;
+    border-radius: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+}
+.sidebar #popular .post{
+    margin-bottom: 40px;
+}
+.sidebar #popular .post .title a{
+    text-align: center;
+    color: #2b2b2b;
+}
+.sidebar #popular .post .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar #popular .post .image img{
+    width: 100%;
+    margin-top: 4%;
+}
+.sidebar #popular .post .image .number{
+    color: white;
+    position: absolute;
+    text-align: center;
+    background: rgb(227,45,4);
+    background: linear-gradient(306deg, rgba(227,45,4,1) 0%, rgba(210,18,8,1) 0%, rgba(242,106,89,1) 100%); 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.sidebar #popular .post .title a:hover{
+    color: #FF0036;
+    text-decoration: none;
+
+}
+
 .posts{
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +220,7 @@ nav .navbar-nav .nav-item{
     background-color: #FCFDFE;
     
 }
+
 /*
 .posts .post-content .wp-post-image{
     transition: transform 0.6s;  Animation
@@ -195,7 +283,7 @@ nav .navbar-nav .nav-item{
 }
 
 /* single page */
-.col-9{
+.col-8{
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -208,4 +296,61 @@ article .title-sp h1{
     font-size: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+/* FOOTER */
+footer{
+
+}
+footer .icons-footer{
+    background-color: #292929;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+footer .icons-footer ul{
+    display: flex;
+    width: 50%;
+
+}
+footer .icons-footer ul li{
+    list-style: none;
+
+}
+footer .icons-footer ul li a img{
+    width: 50%;
+}
+footer .subscribe{
+    width: 100%;
+    background-color: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid rgb(105, 105, 105);
+}
+footer .subscribe h4{
+    color: white;
+}
+footer .credits{
+    display: flex;
+    flex-direction: row;
+    background-color: #2E2E2E;
+    color: white;
+    justify-content: space-between;
+}
+footer .credits ul{
+    margin-right: 10px;
+    display: flex;
+}
+footer .credits p{
+    padding: 20px;
+    margin-left: 10px;
+}
+footer .credits ul li{
+    list-style: none;
+    padding: 20px;
 }
