@@ -6,15 +6,16 @@
 
 
 
-<div class="col-9">
+<div class="col-8">
 
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
     <article class="post resume">
       <div class="title-sp">
+      <div class="category"><?php the_category( ', ') ?></div>
         <h1><?php the_title() ?></h1>
       </div>
       
-      <small class="meta"><?php the_time( get_option( 'date_format' ) ) ?> &bull; <?php the_category( ', ') ?></small>
+      <div class="meta"><p><?php the_time( get_option( 'date_format' ) ) ?></p> </div>
       <div class="post-content">
       <?php the_post_thumbnail(); ?>
         <?php the_content() ?>

@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="<?php echo get_home_url(); ?>"><img src="https://bimber.bringthepixel.com/main/wp-content/uploads/sites/17/2015/11/theme_logo_v01.png" alt=""></a>
+        <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/themes/SocialTheme/assets/logo.png" alt=""></a>
     </header> 
     <nav class="navbar navbar-expand-lg navbar-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,15 +21,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul>
+      <li class="nav-item"><a href="<?php echo get_home_url(); ?>">Home</a></li>
+  <?php wp_list_categories('title_li' ); ?> 
+  <script>
+jQuery(document).ready(function($) {
+    $('li.cat-item').addClass('nav-item');
+}); 
+</script>
+</ul>
+
   </div>
 </nav>

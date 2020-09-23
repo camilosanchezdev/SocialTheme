@@ -18,9 +18,20 @@ header{
 }
 nav .navbar-nav {
     flex-direction: row;
+    padding: 10px;
 }
 nav .navbar-nav .nav-item{
-    padding: 10px;
+    padding: 20px;
+
+}
+nav .navbar-nav .nav-item a{
+    color: white;
+
+}
+nav .navbar-nav .nav-item a:hover{
+    text-decoration: none;
+    color: #444444;
+    transition: ease .4s;
 }
 .row{
     display: flex;
@@ -292,10 +303,17 @@ article .title-sp{
 }
 article .title-sp h1{
     font-family: 'Roboto', sans-serif;
-    margin-left: 20px;
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-weight: bold;
+}
+article .title-sp .category{
+   
+    font-weight: bold;
+}
+article .title-sp .category a{
+    color: #FF0036;
 }
 /* FOOTER */
 footer{
@@ -353,4 +371,129 @@ footer .credits p{
 footer .credits ul li{
     list-style: none;
     padding: 20px;
+}
+
+/*************************
+
+Styles for the buttons.
+@Vivek Kumar Poddar
+http://wpvkp.com
+
+*************************/
+
+.social-box {
+    display: block;
+    border-top: 1px solid rgb(226, 226, 226);
+    padding-top: 10px;
+}
+
+.social-box:last-of-type {
+    margin: 0 0 40px;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a.col-2.sbtn span {
+    display: none;
+}
+
+a.col-6.sbtn {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    
+}   
+
+a.col-6.sbtn span {
+    margin: 0 0 0 15px;
+
+}
+
+a.col-2.sbtn {
+    width: 6%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    margin: 0 0.5% 0 0;
+    line-height: 1.825 !important;
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.s-twitter {
+	background: #03A9F4;
+}
+.s-twitter::before {
+    content: '→';
+}
+.s-twitter:hover {
+    background: #0093d6;
+    text-decoration: none;
+}
+
+
+.s-facebook {
+	background: #3F51B5;
+}
+.s-facebook::before {
+    content: '→';
+}
+a.col-6.sbtn.s-facebook:hover {
+    background: #2f409f;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*.s-buffer {
+	background: #ced7df;
+}
+.s-buffer::before {
+    font-family: fontawesome;
+    content: '\e804';
+}
+a.col-2.sbtn.s-buffer:hover {
+    background: #c3c5c8;
+}*/
+
+/********************************
+////// Important
+*******************************/
+
+.social-btn a:last-of-type {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    a.col-1.sbtn {
+        width: 180px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50px;
+        padding: 10px;
+        color: #fff;
+        margin: 0 0.5% 0 0;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    a.col-1.sbtn {
+        width: 46px;
+    }
+
+    a.col-1.sbtn span {
+        display: none;
+    }
 }
